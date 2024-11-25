@@ -9,8 +9,13 @@
 <body>
     <h1>COVID-19</h1>
     <p>Sube una imagen de rayos X de pulmones para analizar si es COVID o no.</p>
-    <input type="file" id="imageInput" accept="image/*">
-    <button id="predictButton">Analizar</button>
+
+    <div class="card">
+        <img id="preview" alt="Previsualización de la imagen">
+        <label for="imageInput" class="custom-file-upload">Subir Imagen</label>
+        <input type="file" id="imageInput" accept="image/*">
+        <button id="predictButton">Analizar</button>
+    </div>
     <p id="result"></p>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>

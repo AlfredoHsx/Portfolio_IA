@@ -37,3 +37,21 @@ document.getElementById('predictButton').addEventListener('click', async () => {
         resultElement.innerText = `Resultado: ${result}`;
     };
 });
+
+document.getElementById('imageInput').addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    const preview = document.getElementById('preview');
+
+    if (file) {
+        const reader = new FileReader();
+
+        // Cuando el archivo se carga, actualizamos la imagen de previsualización
+        reader.onload = (e) => {
+            preview.src = e.target.result; // Configuramos el src del <img>
+        };
+
+        reader.readAsDataURL(file); // Convertimos el archivo a una URL base64
+    } else {
+        preview.src = ''; // Limpia la previsualización si no hay archivo
+    }
+});
