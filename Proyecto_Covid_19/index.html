@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>COVID-19</title>
+</head>
+<body>
+    <h1>COVID-19</h1>
+    <p>Sube una imagen de rayos X de pulmones para analizar si es COVID o no.</p>
+    <input type="file" id="imageInput" accept="image/*">
+    <button id="predictButton">Analizar</button>
+    <p id="result"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
