@@ -54,7 +54,7 @@ Sigue estos pasos para configurar el proyecto en tu máquina local:
 ## Cómo ejecutar el proyecto
 
 0. **Creación del modelo .keras**:  
-   El proyecto funciona haciendo predicciones de un modelo preentrenado, pero esta pesado y no es sencillo subirlo a github. Por esto deberás ingresar a la carpeta del `model/` dentro del proyecto `predicciones_covid` para ejecutar completo el script `covid.ipynb` y que se genere el modelo para hacer las predicciones. Esto solo será la primera vez, o cada vez que quieras cambiar la arquitectura del modelo y volver a entrenarlo.
+   El proyecto funciona haciendo predicciones de un modelo preentrenado. Para hacer modificaciones a este modelo deberás ingresar a la carpeta del `model/` dentro del proyecto `predicciones_covid` para editar y ejecutar el script `covid.ipynb` y que se genere una nueva versión.
 
 1. **Asegúrate de estar en la carpeta raíz**:  
    Cambia al directorio raíz del proyecto si aún no estás en él:  
