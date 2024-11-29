@@ -12,7 +12,7 @@
     <p>Sube una imagen de rayos X de pulmones para analizar si es COVID o no.</p>
 
     <div class="card">
-        <img id="preview" alt="Previsualización de la imagen">
+        <img id="preview">
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %} {# Agrega el token CSRF para seguridad, es que es por post y pues... buenas prácticas#}
             <label for="imageInput" class="custom-file-upload">Subir Imagen</label>
